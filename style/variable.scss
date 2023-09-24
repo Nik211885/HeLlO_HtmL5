@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+$primary-clr-logo:rgb(255, 94, 0);
+$primary-clr-hover:rgba(255, 255, 255, 0.141);
+$primary-clr-quatity:rgb(159, 3, 3);
+$primary-clr-bordre:rgba(141, 141, 141, 0.434);
+$primary-clr-wave:#d7e6f5;
+$primary-clr-blue-nav:#2f466c;
+$primary-clr-blue:#4d6bc6;
+$primary-size-medium:855px;
+$primary-clr-social-hover:rgba(214, 214, 214, 0.299);
+$primary-clr-dark-purple:#232347;
+$primary-size-t-foot:930px;
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
