@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   width: 100vw;

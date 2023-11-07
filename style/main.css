@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  width: 100vw;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main .title {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 35px;
+}
+@media (max-width: 648px) {
+  main .title {
+    font-size: 0.9rem;
+    padding: 20px;
+    text-align: center;
+  }
+}
+main .list-gift {
+  width: 100%;
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  main .list-gift {
+    gap: 0;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 648px) {
+  main .list-gift {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+  }
+}
+main .gift {
+  cursor: pointer;
+  width: 110px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.2s all;
+}
+main .gift div {
+  width: 100%;
+  height: 115px;
+}
+@media (max-width: 902px) {
+  main .gift div {
+    height: 80px;
+  }
+}
+main .gift div img {
+  transition: 0.2s all;
+  border-radius: 100%;
+  width: 95%;
+  border: 1px solid rgba(88, 88, 88, 0.555);
+}
+@media (max-width: 902px) {
+  main .gift {
+    font-size: 0.8rem;
+    width: 80px;
+  }
+}
+main .gift figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+main .gift figcaption::after {
+  content: "";
+  width: 0px;
+  border: 1px solid black;
+}
+main .gift:hover img {
+  width: 100%;
+  box-shadow: 2px 2px 15px 2px rgba(92, 92, 92, 0.322);
+}
+main .gift:hover figcaption::after {
+  width: 100px;
+}
+main .category {
+  margin-top: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+  text-align: center;
+}
+main .category h2 {
+  margin-bottom: 50px;
+}
+main .category .li-pd {
+  display: flex;
+  padding: 0 20px;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 35px;
+  justify-content: center;
+}
+@media (max-width: 902px) {
+  main .category .li-pd {
+    flex-direction: column;
+    gap: 15px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+main .category .li-pd .pd {
+  position: relative;
+  width: min(30%, 180px);
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  row-gap: 10px;
+}
+@media (max-width: 902px) {
+  main .category .li-pd .pd {
+    border: 1px solid rgba(66, 66, 66, 0.377);
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+main .category .li-pd .pd p {
+  font-size: 0.9rem;
+}
+main .category .li-pd .pd img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 902px) {
+  main .category .li-pd .pd img {
+    width: 4.5rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+main .category .li-pd .pd::after {
+  transition: 0.2s all;
+  content: "";
+  position: absolute;
+  background-color: white;
+  box-shadow: 2px 2px 15px 2px rgba(75, 73, 73, 0.637);
+  border-radius: 20px;
+  z-index: -1;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+}
+main .category .li-pd .pd:hover::after {
+  opacity: 1;
+  width: 110%;
+  height: 108%;
+}
+main .category .pd-hidden {
+  display: none;
+}
+main .category button {
+  cursor: pointer;
+  border: none;
+  font-size: inherit;
+  padding: 13px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 2px rgba(68, 68, 68, 0.568);
+  background-color: rgba(78, 78, 78, 0.185);
+  transition: 0.1s all;
+  margin-top: 15px;
+}
+main .category button:hover {
+  background-color: rgba(78, 78, 78, 0.26);
+}
+main .gift-last {
+  width: 100%;
+  padding: 0 15px;
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+}
+main .gift-last .gift-categories {
+  width: min(1350px, 100%);
+}
+main .gift-last .gift-categories h2 {
+  margin-bottom: 15px;
+  margin-left: 8px;
+}
+main .gift-last .gift-categories figure {
+  margin: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid rgba(94, 94, 94, 0.39);
+  transition: 0.2s all;
+}
+main .gift-last .gift-categories figure figcaption {
+  padding: 0 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60px;
+  font-weight: bold;
+}
+main .gift-last .gift-categories figure img {
+  width: 100%;
+}
+main .gift-last .gift-categories figure:hover {
+  box-shadow: 2px 2px 15px 1px rgba(107, 107, 107, 0.61);
+}
+main .gift-last .gift-categories .li-gift-categories {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  place-items: center;
+}
+main .li-gift-popular figcaption {
+  font-size: 0.9rem;
+  padding: 10px 0 !important;
+  text-align: start !important;
+  height: auto !important;
+}
+main .li-gift-popular figure {
+  overflow: visible !important;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  position: relative !important;
+  border: none !important;
+  position: relative;
+  z-index: 55;
+  border-radius: 12px !important;
+}
+main .li-gift-popular figure:hover {
+  box-shadow: none !important;
+}
+main .li-gift-popular figure:hover .heart-popular {
+  opacity: 1;
+  top: 5px;
+}
+main .li-gift-popular figure img, main .li-gift-popular figure video {
+  width: 100%;
+  aspect-ratio: 4/3.3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+main .li-gift-popular figure .heart-popular {
+  transition: 0.2s all;
+  position: absolute;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  top: 10px;
+  opacity: 0;
+  right: 5px;
+}
+main .li-gift-popular figure .star {
+  width: 100%;
+}
+main .li-gift-popular figure .star span {
+  font-size: 0.8rem;
+}
+main .li-gift-popular figure .price {
+  width: 100%;
+}
+main .li-gift-popular figure .price .del {
+  font-size: 0.8rem;
+  color: rgba(5, 114, 11, 0.842);
+}
+main .li-gift-popular figure .price .promotion {
+  font-size: 1rem;
+}
+main .li-gift-popular figure::after {
+  content: "";
+  position: absolute;
+  transition: 0.2s all;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: -1;
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+  opacity: 0;
+}
+main .li-gift-popular figure:hover::after {
+  width: 105%;
+  height: 105%;
+  opacity: 1;
+  box-shadow: 2px 2px 15px 2px rgba(68, 68, 68, 0.658);
+}/*# sourceMappingURL=main.css.map */

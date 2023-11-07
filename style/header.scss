@@ -94,6 +94,7 @@ header{
     }
     .aside{
         position: relative;
+        z-index: 999999;
         padding: 0 100px 15px;
         .items{
             list-style-type: none;
