@@ -1,0 +1,77 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    font-family: sans-serif;
+    font-size: 0.95rem;
+    display: grid;
+    background: #292828c4;
+    place-content: center;
+}
+.main{
+    width: 650px;
+    padding: 50px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 2px 2px 15px 3px white;
+}
+.input-guess{
+    margin-top: 25px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+}
+form{
+    width: 70%;
+}
+input{
+    padding: 5px;
+    font-size: inherit;
+    width: 100%;
+}
+button{
+    width: 30%;
+}
+input:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+h1{
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+.notify{
+    background-color: rgb(22, 133, 22);
+    color: white;
+    font-size: 1.1rem;
+}
+.hidden{
+    display: none;
+}
+.predict-in-advance{
+    margin-block: 20px;
+}
+.count-pick{
+    margin-block-end: 15px;
+}
+.notify{
+    margin-block-end: 15px;
+}
+.restart{
+    margin-top: 30px;
+    font-size: inherit;
+    padding: 5px;
+}
+.notify-content{
+    margin-top: 25px;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+}

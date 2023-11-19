@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Exercise Number Guess Games">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Guess Game</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Number guessing game</h1>
+        <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+        <div class="input-guess">
+            <form id="form">
+                <input type="number" name="" id="your-pick" min="0" max="100">
+            </form>
+            <button class="send" id="form">Submit guess</button>
+        </div>
+        <div class="notify-content">
+            <div class="predict-in-advance hidden">
+                Previous guesses: 
+                <div class="contaner-guess">
+                    <span>3</span>
+                </div>
+            </div>
+            <div class="count-pick hidden">
+                Number of predictions remaining:
+                <span class="count">10</span>
+            </div>
+            <div class="notify hidden">Congratulations! You got it right!</div>
+            <div class="hidden notify-guess">Last guess was too low!</div>
+            <button class="restart hidden">Start new game</button>
+        </div>
+    </div>
+    <script defer src="scrip.js"></script>
+</body>
+</html>
