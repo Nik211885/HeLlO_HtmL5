@@ -1,0 +1,83 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 0.95rem;
+    font-family: sans-serif;
+    height: 100dvh;
+    display: grid;
+    background: rgba(0, 0, 0, 0.945);
+    place-content: center;
+}
+.main{
+    text-align: center;
+    width: 900px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 15px 1px rgba(224, 224, 224, 0.623);
+}
+.center{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+#js-input-form{
+    gap: 20px;
+    display: flex;
+    width: 80%;
+}
+h1{
+    margin:15px 0 45px 0;
+}
+input{
+    transition: .15s;
+    font-size: inherit;
+    padding: 9px 15px;
+    width: 100%;
+    
+    border-radius:5px;
+    border: 2px solid rgba(65, 61, 61, 0.76);
+}
+
+input:focus{
+    outline: none;
+}
+.add,.del{
+    transition: .20ms;
+    border-radius: 5px;
+    font-size: inherit;
+    padding: 9px 50px;
+    cursor: pointer;
+    background-color: rgba(43, 136, 43, 0.95);
+    color: white;
+    border: none;
+}
+.add:hover{
+    background-color: rgba(43, 136, 43, 0.85);
+}
+.works-time span{
+    margin-left: 7px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 39%;
+}
+.del{
+    background: rgba(151, 11, 11, 0.95);
+    padding: 9px 40px;
+}
+.del:hover{
+    background-color:rgba(151, 11, 11, 0.85) ;
+}
+.conatner{
+    margin-top: 30px;
+    max-height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 0px 10px;
+}
